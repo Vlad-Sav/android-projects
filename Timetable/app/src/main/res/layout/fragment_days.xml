@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/monday_cardview"
+        style="@style/cardStyle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tuesday_cardview"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/wednesday_cardview"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="26dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/gradient"
+            android:gravity="center">
+            <TextView
+                style="@style/textStyle"
+                android:text="@string/monday_text"/>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/tuesday_cardview"
+        style="@style/cardStyle"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/monday_cardview"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/thursday_cardview"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="26dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/gradient"
+            android:gravity="center">
+            <TextView
+                style="@style/textStyle"
+                android:text="@string/tuesday_text"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/wednesday_cardview"
+        style="@style/cardStyle"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/thursday_cardview"
+        app:layout_constraintTop_toBottomOf="@id/monday_cardview"
+        app:layout_constraintBottom_toTopOf="@id/friday_cardview"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="26dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/gradient"
+            android:gravity="center">
+            <TextView
+                style="@style/textStyle"
+                android:text="@string/wednesday_text"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/thursday_cardview"
+        style="@style/cardStyle"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/wednesday_cardview"
+        app:layout_constraintTop_toBottomOf="@id/tuesday_cardview"
+        app:layout_constraintBottom_toTopOf="@id/saturday_cardview"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="26dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/gradient"
+            android:gravity="center">
+            <TextView
+                style="@style/textStyle"
+                android:text="@string/thursday_text"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/friday_cardview"
+        style="@style/cardStyle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/saturday_cardview"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/wednesday_cardview"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="26dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/gradient"
+            android:gravity="center">
+            <TextView
+                style="@style/textStyle"
+                android:text="@string/friday_text"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/saturday_cardview"
+        style="@style/cardStyle"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/friday_cardview"
+        app:layout_constraintTop_toBottomOf="@id/thursday_cardview"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="26dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/gradient"
+            android:gravity="center">
+            <TextView
+                style="@style/textStyle"
+                android:text="@string/saturday_text"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
